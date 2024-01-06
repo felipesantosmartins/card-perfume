@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Começo estilização responsiva mobile */
+
+@media (min-width: 200px) and (max-width: 800px) {
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-color: #F2EAE2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container {
+        display: flex;
+        background-color: #fff;
+        width: 70vw;
+        height: 95vh;
+        flex-direction: column;
+        border-radius: 10px 10px 0 0;
+
+    }
+
+    .image {
+        background-image: url(images/image-product-mobile.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        width: 100%;
+        height: 70%;
+        border-radius: 10px 10px 0 0;
+
+    }
+
+    .perfume {
+
+        height: 100%;
+    }
+
+    .content {
+        width: 90%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: 5%;
+        justify-content: space-between;
+    }
+
+    .category {
+        font-size: 12px;
+        color: #6C7289;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        letter-spacing: 5px;
+    }
+
+    .name__product {
+        width: 100%;
+        line-height: 20px;
+        font-family: 'Fraunces', serif;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .description__product {
+        color: #6C7289;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        font-weight: 500px;
+    }
+
+    .price {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .price__purchase {
+        color: #3D8168;
+        font-family: 'Fraunces', serif;
+        font-size: 32px;
+        font-weight: 700;
+    }
+
+    .price__secundary {
+        text-decoration: line-through;
+        color: #6C7289;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 13px;
+
+    }
+
+    .cart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        background-color: #3D8168;
+        border-radius: 8px;
+        width: 100%;
+        height: 15%;
+        border: none;
+    }
+
+    .cart>img {
+        margin: 0 5% 0 0;
+    }
+
+    .cart:hover {
+        cursor: pointer;
+        background-color: #1A4032;
+    }
+}
+/* Fim estilização do card responsivo mobile */
+
+
+/* inicio estilização do card responsivo desktop */
+@media (min-width: 800px) and (max-width: 1550px) {
+
+    /* Estilização do body */
+
+    body {
+        width: 100vw;
+        height: 100vh;
+        background-color: #F2EAE2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Fim estilização do body */
+
+    .container {
+        display: flex;
+        background-color: #fff;
+        width: 50vw;
+        height: 80vh;
+        border-radius: 10px 0 0 10px;
+
+    }
+
+    .image {
+        background-image: url(images/image-product-desktop.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        width: 80%;
+        height: 100%;
+        border-radius: 10px 0 0 10px;
+
+    }
+
+    .perfume {
+
+        height: 100%;
+    }
+
+    .content {
+        width: 50%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        margin: 5%;
+        justify-content: space-between;
+    }
+
+    .category {
+        color: #6C7289;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        letter-spacing: 5px;
+    }
+
+    .name__product {
+        line-height: 25px;
+        font-family: 'Fraunces', serif;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    .description__product {
+        color: #6C7289;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 11px;
+        font-weight: 500px;
+    }
+
+    .price {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .price__purchase {
+        color: #3D8168;
+        font-family: 'Fraunces', serif;
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    .price__secundary {
+        text-decoration: line-through;
+        color: #6C7289;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 10px;
+
+    }
+
+    .cart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        background-color: #3D8168;
+        border-radius: 8px;
+        width: 100%;
+        height: 15%;
+        border: none;
+    }
+
+    .cart>img {
+        margin: 0 5% 0 0;
+    }
+
+    .cart:hover {
+        cursor: pointer;
+        background-color: #1A4032;
+    }
+
+}
+
+    /* Fim estilização do card responsivo desktop */
